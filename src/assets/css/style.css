@@ -1,0 +1,509 @@
+body {
+    background: #2B303A;
+  }
+  
+  #content {
+  position: absolute;
+  width: 660px;
+  height: 720px;
+  left: 100px;
+  top: 30px;
+  }
+  
+  #calculator {
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 320px;
+  height: 655px;
+  left: 830px;
+  top: 100px;
+  --notchSize: 15px;
+    clip-path: 
+      polygon(
+        0% var(--notchSize), 
+        var(--notchSize) 0%, 
+        calc(100% - var(--notchSize)) 0%, 
+        100% var(--notchSize), 
+        100% calc(100% - var(--notchSize)), 
+        calc(100% - var(--notchSize)) 100%, 
+        var(--notchSize) 100%, 
+        0% calc(100% - var(--notchSize))
+      );
+  }
+  
+  h2 {
+  width: 660px;
+  height: 50px;
+  /* Heading / H1 */
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  /* identical to box height, or 125% */
+  letter-spacing: -0.02em;
+  /* White */
+  color: #FFFFFF;
+  }
+  
+  p {
+  width: 660px;
+  height: 150px;
+  /* Paragraph */
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+  }
+  
+  h3 {
+  width: 380px;
+  height: 70px;
+  /* Heading / H2 */
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 35px;
+  /* or 109% */
+  letter-spacing: -0.02em;
+  /* White */
+  color: #FFFFFF;
+  }
+  
+  h5 {
+  width: 380px;
+  height: 120px;
+  /* Paragraph */
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+  /* White */
+  color: #FFFFFF;
+  }
+  
+  img {
+  position: absolute;
+  width: 240px;
+  height: 180px;
+  left: 420px;
+  top: 300px;
+  }
+  
+  dl {
+  position: absolute;
+  width: 655px;
+  height: 230px;
+  left: 25px !important;
+  top: 520px;
+  color: #FFFFFF;
+  width: 630px;
+  height: 70px;
+  left: 130px;
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+  /* White */
+  color: #FFFFFF;
+  }
+  
+  #t {
+  position: absolute;
+  width: 16px;
+  height: 4px;
+  left: -22px;
+  top: 12px;
+  /* Gradient / Red */
+  background: linear-gradient(90deg, #911812 0%, #E1261C 100%);
+  }
+  
+  #m {
+  position: absolute;
+  width: 16px;
+  height: 4px;
+  left: -22px;
+  top: 42px;
+  /* Gradient / Red */
+  background: linear-gradient(90deg, #911812 0%, #E1261C 100%);
+  }
+  
+  #m2 {
+  position: absolute;
+  width: 16px;
+  height: 4px;
+  left: 15px;
+  top: 73px;
+  /* Gradient / Red */
+  background: linear-gradient(90deg, #D3DAE8 0%, #A7B7D8 100%);
+  }
+  
+  #p {
+  position: absolute;
+  width: 16px;
+  height: 4px;
+  left: 15px;
+  top: 103px;
+  /* Gradient / Red */
+  background: linear-gradient(90deg, #D3DAE8 0%, #A7B7D8 100%);
+  }
+  
+  #a {
+  position: absolute;
+  width: 16px;
+  height: 4px;
+  left: -23px;
+  top: 133px;
+  /* Gradient / Red */
+  background: linear-gradient(90deg, #911812 0%, #E1261C 100%);
+  }
+  
+  #p2 {
+  position: absolute;
+  width: 16px;
+  height: 4px;
+  left: -23px;
+  top: 163px;
+  /* Gradient / Red */
+  background: linear-gradient(90deg, #911812 0%, #E1261C 100%);
+  }
+  
+  #c {
+    color: #E1261C;
+    text-decoration-line: underline; 
+  }
+  
+  #compensation {
+  width: 280px;
+  height: 50px;
+  /* Heading/H4 */
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 25px;
+  /* or 104% */
+  letter-spacing: -0.02em;
+  /* Metal Dark */
+  color: #111317;
+  }
+  
+  #compensation2 {
+  position: absolute;
+  top: 20px;
+  width: 280px;
+  height: 50px;
+  /* Heading/H4 */
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 25px;
+  /* or 104% */
+  letter-spacing: -0.02em;
+  /* Metal Dark */
+  color: #111317;
+  }
+  
+  
+  
+  #inputlabel {
+  position: absolute;
+  width: 280px;
+  height: 20px;
+  left: 8px;
+  top: 110px;
+  /* Form / Label */
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  /* Metal Dark */
+  color: #111317;
+  }
+  
+  #inputlabel2 {
+  position: absolute;
+  width: 280px;
+  height: 20px;
+  left: 8px;
+  top: 200px;
+  /* Form / Label */
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  /* Metal Dark */
+  color: #111317;
+  }
+  
+  #euro {
+  position: absolute;
+  height: 30px;
+  width: 13px;
+  left: 260px;
+  top: 125px;
+  color: rgba(17, 19, 23, 1);
+  font-weight: bold;
+  border-radius: nullpx;
+  }
+  
+  #ds {
+  position: absolute;
+  height: 30px;
+  width: 13px;
+  left: 235px;
+  top: 210px;
+  color: rgba(17, 19, 23, 1);
+  font-weight: bold;
+  border-radius: nullpx;
+  font-size: 19px;
+  }
+
+  #ds2 {
+    position: absolute;
+     top: 405px; 
+     left: 50px;
+     font-weight: bold;
+     color: black; 
+     font-size: 15px;
+  }
+  
+  #average {
+  position: absolute;
+  height: 45px;
+  width: 280px;
+  left: 8px;
+  border-radius: 4px;
+  border: 2px solid  #A7B7D8;
+  }
+  
+  #average2 {
+  position: absolute;
+  top: 220px;
+  height: 45px;
+  width: 280px;
+  left: 8px;
+  border-radius: 4px;
+  border: 2px solid  #A7B7D8;
+  }
+  
+  #have {
+  position: absolute;
+  height: 20px;
+  width: 250px;
+  left: 40px;
+  top: 260px;
+  border-radius: nullpx;
+  color:  rgba(17, 19, 23, 1);
+  }
+  
+  #check {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 8px;
+  top: 280px;
+  cursor: pointer;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #D3DAE8 0%, #A7B7D8 100%),
+  linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  border: 2px solid;
+  border-image-source: linear-gradient(90deg, #D3DAE8 0%, #A7B7D8 100%);
+  }
+  
+  #btn {
+  position: absolute;
+  cursor: pointer;
+  height: 55px;
+  width: 169px;
+  left: 5px;
+  top: 320px;
+  font-size: 18px;
+  border-radius: 30px;
+  padding: 20px, 40px, 20px, 40px;
+  background: linear-gradient(90deg, #911812 0%, #E1261C 100%);
+  color: rgba(255, 255, 255, 1);
+  }
+  
+  #result1 {
+  height: 105px;
+  width: 130px;
+  left: 880px;
+  top: 580px;
+  border-radius: nullpx;
+  }
+  
+  #result2 {
+  height: 105px;
+  width: 130px;
+  left: 1030px;
+  top: 580px;
+  border-radius: nullpx;
+  }
+  
+  #total {
+  height: 50px;
+  width: 280px;
+  left: 880px;
+  top: 725px;
+  border-radius: nullpx;
+  }
+  
+  #employer {
+  position: absolute;
+  height: 45px;
+  width: 130px;
+  left: 20px;
+  top: 380px;
+  border-radius: nullpx;
+  color: #111317;
+  font-size: 15px;
+  font-weight: bold;
+  word-spacing: 3px;
+  line-height: 14px;
+  }
+  
+  #amount {
+  position: absolute;
+  left: 25px;
+  top: 430px;
+  height: 20px;
+  width: 130px;
+  border-radius: nullpx;
+  color: #111317;
+  font-size: 18px;
+  font-weight: bold;
+  }
+  
+  #days {
+  position: absolute;
+  height: 45px;
+  width: 130px;
+  left: 34px;
+  top: 404px;
+  border-radius: nullpx;
+  color: #111317;
+  font-size: 16px;
+  font-weight: bold;
+  }
+  
+  
+  #daily {
+  position: absolute;
+  height: 45px;
+  width: 130px;
+  left: 25px;
+  top: 460px;
+  border-radius: nullpx;
+  color: rgba(122, 129, 142, 1);
+  font-size: 12px;
+  font-weight: bold;
+  }
+  
+  #last {
+  position: absolute;
+  height: 45px;
+  width: 130px;
+  left: 35px;
+  top: 480px;
+  border-radius: nullpx;
+  color: rgba(122, 129, 142, 1);
+  font-size: 14px;
+  font-weight: bold;
+  }
+  
+  #health {
+  position: absolute;
+  height: 45px;
+  width: 130px;
+  left: 170px;
+  top: 380px;
+  border-radius: nullpx;
+  color: #111317;
+  font-size: 15px;
+  font-weight: bold;
+  word-spacing: 3px;
+  line-height: 14px;
+  }
+  
+  #days2 {
+  position: absolute;
+  height: 45px;
+  width: 130px;
+  left: 190px;
+  top: 405px;
+  border-radius: nullpx;
+  color: #111317;
+  font-size: 16px;
+  font-weight: bold;
+  }
+  
+  #zero {
+  position: absolute;
+  left: 190px;
+  top: 430px;
+  height: 20px;
+  width: 130px;
+  border-radius: nullpx;
+  color: #111317;
+  font-size: 18px;
+  font-weight: bold;
+  }
+  
+  #daily2 {
+  position: absolute;
+  height: 45px;
+  width: 130px;
+  left: 180px;
+  top: 460px;
+  border-radius: nullpx;
+  color: rgba(122, 129, 142, 1);
+  font-size: 12px;
+  font-weight: bold;
+  }
+  
+  #last2 {
+  position: absolute;
+  height: 45px;
+  width: 130px;
+  left: 195px;
+  top: 480px;
+  border-radius: nullpx;
+  color: rgba(122, 129, 142, 1);
+  font-size: 14px;
+  font-weight: bold;
+  }
+  
+  #comp {
+  position: absolute;
+  height: 15px;
+  width: 280px;
+  left: 55px;
+  top: 525px;
+  border-radius: nullpx;
+  color:  rgba(17, 19, 23, 1);
+  font-size: 14px;
+  }
+  
+  #tot {
+  position: absolute;
+  height: 15px;
+  width: 280px;
+  left: 120px;
+  top: 535px;
+  border-radius: nullpx;
+  color:  rgba(17, 19, 23, 1);
+  font-size: 20px;
+  }
